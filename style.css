@@ -55,3 +55,59 @@ html {
 .life-bar .life.danger {
     background-color: red;
 }
+
+/* Área do Resultado */
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.result .win {
+    color: green;
+}
+
+.result .lose {
+    color: red;
+}
+
+/* Área dos Botões */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.new-game {
+    background-color: royalblue;
+    color: white;
+}
+
+.attack {
+    background-color: rgb(230, 18, 18);
+    color: white;
+}
+
+.special-attack {
+    background-color: rgb(231, 142, 8);
+    color: white;
+}
+
+.heal {
+    background-color: rgb(80, 233, 106);
+    color: white;
+}
+
+.exit {
+    background-color: rgb(167, 86, 233);
+    color: white;
+}

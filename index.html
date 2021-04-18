@@ -40,8 +40,19 @@
                 <div>{{ godzillaLife }}</div>
             </div>
         </div>
-        <div class="panel result">2</div>
-        <div class="panel buttons">3</div>
+        <div v-if="hasResult" class="panel result">
+            <div v-if="godzillaLife == 0" class="win">Uaaa! Kong WIN ! &#x1F412;</div>
+            <div v-else class="lose">BIRLL! GODZILAA WIN ! &#x1F409;</div>
+        </div>
+        <div class="panel buttons">
+            <template v-if="running">
+                <button class="btn attack">Attack</button>
+                <button class="btn special-attack">Special Attack</button>
+                <button class="btn heal">Heal</button>
+                <button @click="running = false" class="btn exit">Exit</button>
+            </template>
+            <button v-else @click="startGame" class="btn new-game">Play</button>
+        </div>
         <div class="panel logs">4</div>
     </div>
     <script src="app.js"></script>
