@@ -46,8 +46,8 @@
         </div>
         <div class="panel buttons">
             <template v-if="running">
-                <button class="btn attack">Attack</button>
-                <button class="btn special-attack">Special Attack</button>
+                <button @click="attack(false)" class="btn attack">Attack</button>
+                <button @click="attack(true)" class="btn special-attack">Special Attack</button>
                 <button class="btn heal">Heal</button>
                 <button @click="running = false" class="btn exit">Exit</button>
             </template>
