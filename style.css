@@ -111,3 +111,34 @@ html {
     background-color: rgb(167, 86, 233);
     color: white;
 }
+
+/* Área dos Logs */
+
+.logs ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logs ul li {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px;
+    padding: 3px 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.kong {
+    background-color: indigo;
+    color: #fff;
+}
+
+.godzilla {
+    background-color: red;
+    color: #fff;
+}
